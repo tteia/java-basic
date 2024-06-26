@@ -13,6 +13,11 @@ public class DecoData {
 //        instanceMethod(); // 인스턴스 메서드 접근 > 컴파일 에러
     }
 
+    public static void staticCall(DecoData data){
+        data.instanceValue++;
+        data.instanceMethod();
+    }
+
     public void instanceCall(){
         instanceValue++; // 인스턴스 변수 접근
         instanceMethod(); // 인스턴스 메서드 접근
